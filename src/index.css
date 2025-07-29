@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #2C3E50;
+    transition: 0.3s ease-in-out;
+
+}
+.navbar-toggler{
+    color: white !important;
+    border: 1px solid white !important;
+    outline: 0;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.95' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important
+;
+}
+.navbar-nav .nav-link.active{
+    background-color: #1ABC9C;
+    border-radius: 0.5rem;
+}
+.navbar-collapse {
+    justify-content: flex-end !important;
+}
+li{
+    border-radius: 50%;
+    font-size: 18px;
+}
+.star-icon{
+    position: relative;
+}
+.star-icon::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    top: 50%;transform: translateY(-50%);
+    left: 52%;
+    background-color: rgb(255, 255, 255);
+}
+.star-icon::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    top: 50%;transform: translateY(-50%);
+    right: 52%;
+    background-color: rgb(255, 255, 255);
+}
+
+.star-iconv{
+    position: relative;
+}
+.star-iconv::before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    top: 50%;transform: translateY(-50%);
+    left: 52%;
+    background-color:  #2C3E50;
+}
+.star-iconv::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    top: 50%;transform: translateY(-50%);
+    right: 52%;
+    background-color:  #2C3E50;
+}
+
+
+.port img{
+    border-radius: 1rem;
+}
+.overlay{
+    display: flex;justify-content: center;align-items: center;
+    background-color: #1abc9cd4;
+    font-size: 5rem;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    border-radius: 1rem;
+}
+.port:hover .overlay{
+    opacity: 1;
+}
+label{
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+    margin-top: 10px;
+    transform: translate(0.7rem,0px);
+    color: #1ABC9C;
+
+
+}
+
+.moveLabel{
+    opacity: 1 !important;
+    transform: translate(0.7rem,40px);
+
+}
+
+input{
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(115, 115, 115, 0.285);
+}
+
+button{
+    background-color: #1ABC9C;
+    color: aliceblue;
+    border:1px solid rgba(255, 0, 0, 0);
+    border-radius: 5px !important;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: #11ffcf;
+
+}
